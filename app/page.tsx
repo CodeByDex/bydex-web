@@ -1,65 +1,97 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="max-w-4xl mx-auto px-6 py-16">
+      {/* Hero Section */}
+      <section className="py-20 text-center">
+        <div className="mb-8 flex justify-center">
+          <Image
+            src="/branding/Makers Mark.png"
+            alt="Bydex Logo"
+            width={120}
+            height={120}
+            priority
+            className="dark:hidden"
+          />
+          <Image
+            src="/branding/Makers Mark White.png"
+            alt="Bydex Logo"
+            width={120}
+            height={120}
+            priority
+            className="hidden dark:block"
+          />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-slate-900 dark:text-white">
+          Welcome to Bydex
+        </h1>
+        <p className="text-xl text-slate-600 dark:text-slate-300 mb-4">
+          Crafting digital experiences and beautiful ceramics
+        </p>
+        <p className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
+          I&apos;m a passionate developer and potter who creates thoughtful solutions on the web 
+          and meaningful pieces in clay. Explore my work below.
+        </p>
+      </section>
+
+      {/* Portfolio Sections */}
+      <section className="grid md:grid-cols-2 gap-12 py-16">
+        {/* Web Development Section */}
+        <div className="group cursor-pointer">
+          <Link href="/web" className="block">
+            <div className="bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-700 rounded-lg p-8 h-64 flex flex-col justify-between hover:shadow-lg transition-shadow border border-orange-200 dark:border-orange-900">
+              <div>
+                <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-3">
+                  Web Development
+                </h2>
+                <p className="text-slate-600 dark:text-slate-300">
+                  Modern, responsive web applications built with React, Next.js, and TypeScript
+                </p>
+              </div>
+              <div className="text-orange-600 dark:text-orange-400 font-semibold flex items-center">
+                Explore Projects →
+              </div>
+            </div>
+          </Link>
         </div>
-      </main>
-    </div>
+
+        {/* Pottery Section */}
+        <div className="group cursor-pointer">
+          <Link href="/pottery" className="block">
+            <div className="bg-linear-to-br from-orange-50 to-amber-50 dark:from-orange-900 dark:to-amber-900 rounded-lg p-8 h-64 flex flex-col justify-between hover:shadow-lg transition-shadow border border-orange-300 dark:border-orange-700">
+              <div>
+                <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-3">
+                  Pottery
+                </h2>
+                <p className="text-slate-600 dark:text-slate-300">
+                  Hand-crafted ceramics and functional pottery pieces with unique designs
+                </p>
+              </div>
+              <div className="text-orange-700 dark:text-orange-300 font-semibold flex items-center">
+                View Gallery →
+              </div>
+            </div>
+          </Link>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 border-t border-slate-200 dark:border-slate-800">
+        <h2 className="text-3xl font-bold mb-8 text-slate-900 dark:text-white">
+          About Me
+        </h2>
+        <p className="text-lg text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+          I combine technical expertise in web development with a passion for creating beautiful, 
+          functional ceramics. My approach to both disciplines emphasizes clean design, attention to detail, 
+          and creating work that resonates with people.
+        </p>
+        <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+          Whether it&apos;s building a responsive web application or throwing clay on a wheel, 
+          I bring the same dedication to craftsmanship and problem-solving to every project.
+        </p>
+      </section>
+    </main>
   );
 }
