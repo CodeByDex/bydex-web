@@ -19,6 +19,45 @@
   }
 }
 
+/* Accent palette (light and dark) */
+:root {
+  /* Light theme accent - ranges from #ffab52 (light) through #fc8403 (center) to #c96800 (dark) */
+  --accent-50: #fffbf5;
+  --accent-100: #ffe8d0;
+  --accent-200: #ffd4ab;
+  --accent-300: #ffc080;
+  --accent-400: #ffab52;
+  --accent-500: #fc8403;
+  --accent-600: #e07a02;
+  --accent-700: #c96800;
+  --accent-800: #a65600;
+  --accent-900: #804400;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark theme accent - inverted range for dark mode */
+    --accent-50: #3d2800;
+    --accent-100: #553400;
+    --accent-200: #6d4200;
+    --accent-300: #855000;
+    --accent-400: #9d5e00;
+    --accent-500: #b56c00;
+    --accent-600: #cd7a02;
+    --accent-700: #e58803;
+    --accent-800: #fd9620;
+    --accent-900: #ffb366;
+  }
+}
+
+/* Utility classes that use the accent variables so they adapt to color-scheme */
+.accent-bg { background-color: var(--accent-50); }
+.accent-border { border-color: var(--accent-200); }
+.accent-text { color: var(--accent-700); }
+.accent-strong { color: var(--accent-900); }
+.accent-pill { background-color: var(--accent-100); color: var(--accent-800); }
+
+
 body {
   background: var(--background);
   color: var(--foreground);
