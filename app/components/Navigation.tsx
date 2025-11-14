@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Navigation() {
   return (
-    <nav className="bg-white dark:bg-slate-900 border-b border-orange-200 dark:border-orange-900 sticky top-0 z-50">
-      <div className="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+    <nav className="bg-orange-50 dark:bg-orange-900 border-b border-orange-200 dark:border-orange-800 sticky top-0 z-50">
+      <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/branding/Makers Mark.png"
@@ -20,15 +20,19 @@ export default function Navigation() {
             height={40}
             className="hidden dark:block"
           />
-          <span className="text-2xl font-bold text-slate-900 dark:text-white">
+          <span className="text-2xl font-bold text-slate-700 dark:text-slate-100">
             Bydex
           </span>
         </Link>
-        <div className="flex gap-8">
-          <Link href="/web" className="text-slate-600 dark:text-slate-300 hover:text-orange-600 dark:hover:text-orange-400 transition">
+
+        <div className="flex items-center gap-6">
+          <Link href="/" className="text-slate-700 dark:text-slate-300 hover:text-orange-700 dark:hover:text-orange-300 transition">
+            Home
+          </Link>
+          <Link href="/web" className="text-slate-700 dark:text-slate-300 hover:text-orange-700 dark:hover:text-orange-300 transition">
             Web Development
           </Link>
-          <Link href="/pottery" className="text-slate-600 dark:text-slate-300 hover:text-orange-600 dark:hover:text-orange-400 transition">
+          <Link href="/pottery" className="text-slate-700 dark:text-slate-300 hover:text-orange-700 dark:hover:text-orange-300 transition">
             Pottery
           </Link>
         </div>
