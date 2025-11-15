@@ -3,33 +3,33 @@ import Image from "next/image";
 export default function Pottery() {
   const pieces = [
     {
-      title: "Handmade Bowl",
-      description: "Functional ceramic bowl with natural glaze",
-      technique: "Wheel Thrown",
+      title: "Small Flower Pot with Drip Tray",
+      description: "Glazed flower pot with a raw clay drip tray made with Standard Clay 760.",
+      technique: "Wheel Thrown, Hand Glazed",
       image: "/images/pottery/Pottery-1.avif",
     },
     {
-      title: "Plate Set",
-      description: "Set of dinner plates with custom design",
-      technique: "Hand Built",
+      title: "Cup Set",
+      description: "Glazed set of cups from my 2nd and 3rd round of throwing Standard Clay 760 in 600 and 800 gram quantities.",
+      technique: "Wheel Thrown, Hand Glazed",
       image: "/images/pottery/Pottery-2.avif",
     },
     {
-      title: "Vase Collection",
-      description: "Series of decorative vases in various sizes",
-      technique: "Wheel Thrown",
+      title: "Cup Set",
+      description: "Glazed set of cups from my 1st round of throwing Standard Clay 760 at 400 grams.",
+      technique: "Wheel Thrown, Hand Glazed",
       image: "/images/pottery/Pottery-3.avif",
     },
     {
-      title: "Sculptural Piece",
-      description: "Abstract ceramic sculpture with textured finish",
-      technique: "Hand Built",
+      title: "Single Cup",
+      description: "Single glazed cup from my third pottery class using a white stoneware clay body.",
+      technique: "Wheel Thrown, Hand Glazed",
       image: "/images/pottery/Pottery-4.avif",
     },
     {
-      title: "Functional Vessels",
-      description: "Set of serving vessels with earthy glaze",
-      technique: "Wheel Thrown",
+      title: "Cup Set",
+      description: "Matching set of glazed cups from my third pottery class and first attempt at throwing matching pieces using a white stoneware clay body.",
+      technique: "Wheel Thrown, Underglazed",
       image: "/images/pottery/Pottery-5.avif",
     },
   ];
@@ -42,7 +42,7 @@ export default function Pottery() {
           Pottery
         </h1>
         <p className="text-xl text-slate-600 dark:text-slate-300">
-          Hand-crafted ceramics and functional pottery pieces
+          A journey of growth, creativity and skillmanship through clay. 
         </p>
       </section>
 
@@ -52,13 +52,13 @@ export default function Pottery() {
           My Craft
         </h2>
         <p className="text-lg text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
-          Each piece I create is carefully crafted on the wheel or by hand, 
-          combining traditional techniques with contemporary design. I focus on creating 
-          functional pottery that is beautiful and meant to be used.
+          I started my pottery journey in late 2023 taking a beginner course are the Findlay Art League (FAL) with my friend David. 
+          Prior to that I had never thrown clay on a wheel and besides required art classes during my K-12 education had never done much with the fine arts. 
+          Since then I took a couple additional classes at FAL before joining the studio in 2025 and beginning my own practice.
         </p>
         <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-          I work with high-fire stoneware and explore different glazing techniques to create 
-          unique finishes that highlight the natural qualities of the clay.
+          My practice currently is focusing on trying build my techincal skills while exploring different clay bodies. 
+          In class we used a very plastic smooth white stoneware and since starting my own practice have been working with a slightly grogged speckled brown stoneware (Standard Clay 769).
         </p>
       </section>
 
@@ -68,7 +68,7 @@ export default function Pottery() {
           Techniques
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-orange-50 dark:bg-orange-900/30 rounded-lg p-6 border border-orange-200 dark:border-orange-800">
+          <div className="bg-linear-to-br from-orange-50 to-amber-50 dark:from-orange-900 dark:to-amber-900 rounded-lg p-6 border border-orange-300 dark:border-orange-700">
             <h3 className="font-bold text-slate-900 dark:text-white mb-3">
               Wheel Throwing
             </h3>
@@ -76,20 +76,30 @@ export default function Pottery() {
               Creating symmetrical forms on the pottery wheel
             </p>
           </div>
-          <div className="bg-orange-50 dark:bg-orange-900/30 rounded-lg p-6 border border-orange-200 dark:border-orange-800">
+          <div className="bg-linear-to-br from-orange-50 to-amber-50 dark:from-orange-900 dark:to-amber-900 rounded-lg p-6 border border-orange-300 dark:border-orange-700">
             <h3 className="font-bold text-slate-900 dark:text-white mb-3">
-              Hand Building
+              Reclaim
             </h3>
             <p className="text-slate-600 dark:text-slate-300">
-              Sculpting and constructing organic forms by hand
+              One of the things I like about clay is that it can be reclaimed and reused, so all time spent, even when a piece doesn't come out, 
+              still contributes to future work.
             </p>
           </div>
-          <div className="bg-orange-50 dark:bg-orange-900/30 rounded-lg p-6 border border-orange-200 dark:border-orange-800">
+          <div className="bg-linear-to-br from-orange-50 to-amber-50 dark:from-orange-900 dark:to-amber-900 rounded-lg p-6 border border-orange-300 dark:border-orange-700">
             <h3 className="font-bold text-slate-900 dark:text-white mb-3">
               Glazing
             </h3>
             <p className="text-slate-600 dark:text-slate-300">
-              Exploring colors and finishes through glazing techniques
+              So far have only been hand glazing with commercial glazes but am researching mixing glazes to try dipping in the future. 
+            </p>
+          </div>
+          <div className="bg-linear-to-br from-orange-50 to-amber-50 dark:from-orange-900 dark:to-amber-900 rounded-lg p-6 border border-orange-300 dark:border-orange-700">
+            <h3 className="font-bold text-slate-900 dark:text-white mb-3">
+              Firing
+            </h3>
+            <p className="text-slate-600 dark:text-slate-300">
+              I've joined the studio committee that is responsible for the studio operations which includes firing the kiln. 
+              I'm using this to learn more about firing kilns and getting hands on experience. 
             </p>
           </div>
         </div>
