@@ -41,7 +41,7 @@ export default function Home() {
         {/* Web Development Section */}
         <div className="group cursor-pointer">
           <Link href="/web" className="block">
-            <div className="bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-700 rounded-lg p-8 h-64 flex flex-col justify-between hover:shadow-lg transition-shadow border border-orange-200 dark:border-orange-900">
+            <div className="background-slate rounded-lg p-8 h-64 flex flex-col justify-between hover:shadow-lg transition-shadow border border-orange-200 dark:border-orange-900">
               <div>
                 <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-3">
                   Web Development
@@ -60,7 +60,7 @@ export default function Home() {
         {/* Pottery Section */}
         <div className="group cursor-pointer">
           <Link href="/pottery" className="block">
-            <div className="bg-linear-to-br from-orange-50 to-amber-50 dark:from-orange-900 dark:to-amber-900 rounded-lg p-8 h-64 flex flex-col justify-between hover:shadow-lg transition-shadow border border-orange-300 dark:border-orange-700">
+            <div className="background-orange rounded-lg p-8 h-64 flex flex-col justify-between hover:shadow-lg transition-shadow border border-orange-300 dark:border-orange-700">
               <div>
                 <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-3">
                   Pottery

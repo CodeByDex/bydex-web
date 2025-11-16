@@ -68,7 +68,7 @@ export default function Pottery() {
           Techniques
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-linear-to-br from-orange-50 to-amber-50 dark:from-orange-900 dark:to-amber-900 rounded-lg p-6 border border-orange-300 dark:border-orange-700">
+          <div className="background-orange rounded-lg p-6 border border-orange-300 dark:border-orange-700">
             <h3 className="font-bold text-slate-900 dark:text-white mb-3">
               Wheel Throwing
             </h3>
@@ -76,7 +76,7 @@ export default function Pottery() {
               Creating symmetrical forms on the pottery wheel
             </p>
           </div>
-          <div className="bg-linear-to-br from-orange-50 to-amber-50 dark:from-orange-900 dark:to-amber-900 rounded-lg p-6 border border-orange-300 dark:border-orange-700">
+          <div className="background-orange rounded-lg p-6 border border-orange-300 dark:border-orange-700">
             <h3 className="font-bold text-slate-900 dark:text-white mb-3">
               Reclaim
             </h3>
@@ -85,7 +85,7 @@ export default function Pottery() {
               still contributes to future work.
             </p>
           </div>
-          <div className="bg-linear-to-br from-orange-50 to-amber-50 dark:from-orange-900 dark:to-amber-900 rounded-lg p-6 border border-orange-300 dark:border-orange-700">
+          <div className="background-orange rounded-lg p-6 border border-orange-300 dark:border-orange-700">
             <h3 className="font-bold text-slate-900 dark:text-white mb-3">
               Glazing
             </h3>
@@ -93,7 +93,7 @@ export default function Pottery() {
               So far have only been hand glazing with commercial glazes but am researching mixing glazes to try dipping in the future. 
             </p>
           </div>
-          <div className="bg-linear-to-br from-orange-50 to-amber-50 dark:from-orange-900 dark:to-amber-900 rounded-lg p-6 border border-orange-300 dark:border-orange-700">
+          <div className="background-orange rounded-lg p-6 border border-orange-300 dark:border-orange-700">
             <h3 className="font-bold text-slate-900 dark:text-white mb-3">
               Firing
             </h3>
@@ -114,7 +114,7 @@ export default function Pottery() {
           {pieces.map((piece, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-slate-800 border border-orange-200 dark:border-orange-800 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
+              className="background-slate border border-orange-200 dark:border-orange-800 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
             >
               <div className="relative h-64 w-full bg-slate-200">
                 <Image

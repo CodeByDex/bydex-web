@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Navigation() {
   return (
-    <nav className="accent-bg border-b accent-border sticky top-0 z-50">
+    <nav className="background-orange border-b accent-border sticky top-0 z-50">
       <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <Image
