@@ -5,6 +5,7 @@ export default function Footer() {
         <div className="text-center text-slate-700 dark:text-slate-100">
           <p className="accent-text">&copy; {new Date().getFullYear()} ByDex. All rights reserved.</p>
           <p className="text-sm mt-2 text-slate-600 dark:text-slate-300">Crafted with care for web and clay.</p>
+          <a href="https://github.com/CodeByDex/bydex-web" target="_blank">Github</a>
         </div>
       </div>
     </footer>
