@@ -97,3 +97,4 @@ Update styles in:
 - **Styling**: Tailwind CSS 4
 - **Deployment**: GitHub Pages with GitHub Actions
 - **Domain**: bydex.co (custom domain)
+- 
