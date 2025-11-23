@@ -9,7 +9,7 @@ export default function Home() {
         <div className="mb-8 flex justify-center">
           <Image
             src="/branding/Makers Mark.png"
-            alt="Bydex Logo"
+            alt="ByDex Logo"
             width={120}
             height={120}
             priority
@@ -17,7 +17,7 @@ export default function Home() {
           />
           <Image
             src="/branding/Makers Mark White.png"
-            alt="Bydex Logo"
+            alt="ByDex Logo"
             width={120}
             height={120}
             priority
@@ -25,14 +25,13 @@ export default function Home() {
           />
         </div>
         <h1 className="text-5xl md:text-6xl font-bold mb-6 text-slate-900 dark:text-white">
-          Welcome to Bydex
+          Welcome to ByDex
         </h1>
         <p className="text-xl text-slate-600 dark:text-slate-300 mb-4">
-          Crafting digital experiences and beautiful ceramics
+          Serial Hobbyest with Community at Heart
         </p>
         <p className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
-          I&apos;m a passionate developer and potter who creates thoughtful solutions on the web 
-          and meaningful pieces in clay. Explore my work below.
+          Welcome to a look into my creative pursuits and passions 
         </p>
       </section>
 
@@ -66,7 +65,7 @@ export default function Home() {
                   Pottery
                 </h2>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Hand-crafted ceramics and functional pottery pieces with unique designs
+                  Hand-crafted ceramics
                 </p>
               </div>
               <div className="text-orange-700 dark:text-orange-300 font-semibold flex items-center">
@@ -83,13 +82,8 @@ export default function Home() {
           About Me
         </h2>
         <p className="text-lg text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
-          I combine technical expertise in web development with a passion for creating beautiful, 
-          functional ceramics. My approach to both disciplines emphasizes clean design, attention to detail, 
-          and creating work that resonates with people.
-        </p>
-        <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-          Whether it&apos;s building a responsive web application or throwing clay on a wheel, 
-          I bring the same dedication to craftsmanship and problem-solving to every project.
+          I enjoy creative expression and learning new skils that allow me to do that be that passion projects building web pages, 
+          volunteering with a sister city exchange program, or one of my many hands-on hobbies like fiber and ceramic arts. 
         </p>
       </section>
     </main>
