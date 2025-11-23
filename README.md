@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bydex Portfolio Site
 
-## Getting Started
+A professional portfolio website showcasing web development and pottery work, built with Next.js and Tailwind CSS.
 
-First, run the development server:
+## Features
+
+- **Responsive Design**: Mobile-first approach with dark mode support
+- **Multi-page Portfolio**: Dedicated sections for web development and pottery
+- **GitHub Pages Ready**: Optimized for deployment to GitHub Pages with custom domain support
+- **Modern Stack**: Built with Next.js 16, React 19, TypeScript, and Tailwind CSS
+
+## Pages
+
+- **Home** (`/`) - Overview and introduction
+- **Web Development** (`/web`) - Web development projects and skills
+- **Pottery** (`/pottery`) - Pottery portfolio and techniques
+
+## Development
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+
+### Getting Started
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Open http://localhost:3000 in your browser
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Building for Production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Build the static site
+npm run build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Preview the build locally
+npm run start
+```
 
-## Learn More
+## Deployment to GitHub Pages
 
-To learn more about Next.js, take a look at the following resources:
+### Setup Steps
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Repository Configuration**
+   - Ensure your repository is set to public
+   - Go to Settings → Pages
+   - Set Source to "GitHub Actions"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Custom Domain (bydex.co)**
+   - Add your custom domain in GitHub Settings → Pages → Custom domain
+   - Update your DNS records with your domain provider to point to GitHub Pages:
+     - For root domain: Add A records pointing to GitHub Pages IPs
+     - For subdomain: Add CNAME record pointing to `your-username.github.io`
 
-## Deploy on Vercel
+3. **Automatic Deployment**
+   - The GitHub Actions workflow (`.github/workflows/deploy.yml`) automatically:
+     - Builds the site when you push to `main` branch
+     - Deploys to GitHub Pages
+     - Publishes to your custom domain
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Manual Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+# Build static export
+npm run build
+
+# Deploy the 'out' directory to GitHub Pages
+# Using GitHub CLI:
+gh pages deploy out
+
+# Or use peaceiris/actions-gh-pages action (configured in workflow)
+```
+
+## Customization
+
+Edit the content in:
+- `app/page.tsx` - Home page
+- `app/web/page.tsx` - Web development portfolio
+- `app/pottery/page.tsx` - Pottery portfolio
+- `app/components/Navigation.tsx` - Navigation menu
+- `app/components/Footer.tsx` - Footer
+
+Update styles in:
+- `app/globals.css` - Global styles
+- Tailwind CSS classes in component files
+
+## Technologies
+
+- **Framework**: Next.js 16
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **Deployment**: GitHub Pages with GitHub Actions
+- **Domain**: bydex.co (custom domain)
+- 
