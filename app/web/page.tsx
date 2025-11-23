@@ -1,22 +1,27 @@
+import Image from "next/image";
+
 export default function WebDevelopment() {
   const projects = [
     {
-      title: "Project 1",
-      description: "A modern web application built with React and TypeScript",
-      technologies: ["React", "TypeScript", "Next.js"],
-      link: "#",
+      title: "Community LGBTQ+ Event Page",
+      description: "Volunteer/community work I did to help highlight pride month events happening around the community.",
+      technologies: ["TailwindCSS", "TypeScript", "Next.js"],
+      link: "https://findlaypride.com/",
+      image: "/images/web/pride.png",
     },
     {
-      title: "Project 2",
-      description: "Full-stack application with database and API",
-      technologies: ["Next.js", "PostgreSQL", "API Design"],
-      link: "#",
+      title: "Language Study Application",
+      description: "Study app built mostly for personal use with the hope of replicating a study app that isn't available anymore.",
+      technologies: ["Next.js", "TailwindCSS", "API Design"],
+      link: "https://bydex-japan.vercel.app/",
+      image: "/images/web/kanado.png",
     },
     {
-      title: "Project 3",
-      description: "Responsive design with custom animations",
-      technologies: ["React", "Tailwind CSS", "Framer Motion"],
-      link: "#",
+      title: "Professional Services",
+      description: "Class capstone project used to highlight team members abilities.",
+      technologies: ["Next.js", "Tailwind CSS", "Heroku"],
+      link: "https://www.oiodev.com/",
+      image: "/images/web/oiodev.png",
     },
   ];
 
@@ -28,7 +33,7 @@ export default function WebDevelopment() {
           Web Development
         </h1>
         <p className="text-xl text-slate-600 dark:text-slate-300">
-          Modern, responsive web applications with clean code and great UX
+          IT architect in my 9-5, enjoy still coding in my 5-9.
         </p>
       </section>
 
@@ -68,30 +73,41 @@ export default function WebDevelopment() {
         <h2 className="text-2xl font-bold mb-8 text-slate-900 dark:text-white">
           Featured Projects
         </h2>
-        <div className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <a
+            <div
               key={index}
-              href={project.link}
-              className="block bg-white dark:bg-slate-800 border border-orange-200 dark:border-orange-800 rounded-lg p-6 hover:shadow-lg hover:border-orange-400 dark:hover:border-orange-600 transition-all"
+              className="background-slate border border-orange-200 dark:border-orange-800 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
-                {project.title}
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 mb-4">
-                {project.description}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {project.technologies.map((tech, i) => (
-                  <span
-                    key={i}
-                    className="bg-orange-100 dark:bg-orange-900 text-orange-900 dark:text-orange-100 text-xs px-3 py-1 rounded-full"
-                  >
-                    {tech}
-                  </span>
-                ))}
+              <div className="relative h-64 w-full bg-slate-200">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                />
               </div>
-            </a>
+              <div className="p-6">
+                <div className="flex justify-between items-start mb-2">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                    {project.title}
+                  </h3>
+                  <span className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech, i) => (
+                      <span
+                        key={i}
+                        className="bg-orange-100 dark:bg-orange-900 text-orange-900 dark:text-orange-100 text-xs px-3 py-1 rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </span>
+                </div>
+                <p className="text-slate-600 dark:text-slate-300">
+                  {project.description}
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       </section>
