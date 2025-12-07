@@ -42,7 +42,7 @@ export default function Pottery() {
           Pottery
         </h1>
         <p className="text-xl text-slate-600 dark:text-slate-300">
-          A journey of growth, creativity and skillmanship through clay. 
+          A journey of growth, creativity and skillmanship through clay.
         </p>
       </section>
 
@@ -52,12 +52,12 @@ export default function Pottery() {
           My Craft
         </h2>
         <p className="text-lg text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
-          I started my pottery journey in late 2023 taking a beginner course are the Findlay Art League (FAL) with my friend David. 
-          Prior to that I had never thrown clay on a wheel and besides required art classes during my K-12 education had never done much with the fine arts. 
+          I started my pottery journey in late 2023 taking a beginner course are the Findlay Art League (FAL) with my friend David.
+          Prior to that I had never thrown clay on a wheel and besides required art classes during my K-12 education had never done much with the fine arts.
           Since then I took a couple additional classes at FAL before joining the studio in 2025 and beginning my own practice.
         </p>
         <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-          My practice currently is focusing on trying build my techincal skills while exploring different clay bodies. 
+          My practice currently is focusing on trying build my techincal skills while exploring different clay bodies.
           In class we used a very plastic smooth white stoneware and since starting my own practice have been working with a slightly grogged speckled brown stoneware (Standard Clay 769).
         </p>
       </section>
@@ -81,7 +81,7 @@ export default function Pottery() {
               Reclaim
             </h3>
             <p className="text-slate-600 dark:text-slate-300">
-              One of the things I like about clay is that it can be reclaimed and reused, so all time spent, even when a piece doesn't come out, 
+              One of the things I like about clay is that it can be reclaimed and reused, so all time spent, even when a piece doesn't come out,
               still contributes to future work.
             </p>
           </div>
@@ -90,7 +90,7 @@ export default function Pottery() {
               Glazing
             </h3>
             <p className="text-slate-600 dark:text-slate-300">
-              So far have only been hand glazing with commercial glazes but am researching mixing glazes to try dipping in the future. 
+              So far have only been hand glazing with commercial glazes but am researching mixing glazes to try dipping in the future.
             </p>
           </div>
           <div className="background-orange rounded-lg p-6 border border-orange-300 dark:border-orange-700">
@@ -98,8 +98,8 @@ export default function Pottery() {
               Firing
             </h3>
             <p className="text-slate-600 dark:text-slate-300">
-              I've joined the studio committee that is responsible for the studio operations which includes firing the kiln. 
-              I'm using this to learn more about firing kilns and getting hands on experience. 
+              I've joined the studio committee that is responsible for the studio operations which includes firing the kiln.
+              I'm using this to learn more about firing kilns and getting hands on experience.
             </p>
           </div>
         </div>
@@ -149,8 +149,8 @@ export default function Pottery() {
           As I am new to pottery I have been scouring resources for different techniques and educational content.
         </p>
         <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-          There are a couple youtubers I have been gravitated to in particularly and seem to go back to their content quite a bit. 
-          They are: 
+          There are a couple youtubers I have been gravitated to in particularly and seem to go back to their content quite a bit.
+          They are:
           <ul className="list-disc list-inside mt-2">
             <li><a href="https://www.youtube.com/@floriangadsby" target="_blank" className="underline">Florian Gadsby</a></li>
             <li><a href="https://www.youtube.com/@OldForgeCreations" target="_blank" className="underline">Old Forge Creations</a></li>

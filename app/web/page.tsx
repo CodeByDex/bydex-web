@@ -79,34 +79,36 @@ export default function WebDevelopment() {
               key={index}
               className="background-slate border border-orange-200 dark:border-orange-800 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
             >
-              <div className="relative h-64 w-full bg-slate-200">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                    {project.title}
-                  </h3>
-                  <span className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, i) => (
-                      <span
-                        key={i}
-                        className="bg-orange-100 dark:bg-orange-900 text-orange-900 dark:text-orange-100 text-xs px-3 py-1 rounded-full"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </span>
+              <a href={project.link} target="_blank">
+                <div className="relative h-64 w-full bg-slate-200">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <p className="text-slate-600 dark:text-slate-300">
-                  {project.description}
-                </p>
-              </div>
+                <div className="p-6">
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                      {project.title}
+                    </h3>
+                    <span className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech, i) => (
+                        <span
+                          key={i}
+                          className="bg-orange-100 dark:bg-orange-900 text-orange-900 dark:text-orange-100 text-xs px-3 py-1 rounded-full"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </span>
+                  </div>
+                  <p className="text-slate-600 dark:text-slate-300">
+                    {project.description}
+                  </p>
+                </div>
+              </a>
             </div>
           ))}
         </div>
