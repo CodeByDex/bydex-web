@@ -106,7 +106,7 @@ export default function Pottery() {
       </section>
 
       {/* Gallery */}
-      <section>
+      <section className="mb-16">
         <h2 className="text-2xl font-bold mb-8 text-slate-900 dark:text-white">
           Recent Work
         </h2>
@@ -140,6 +140,22 @@ export default function Pottery() {
             </div>
           ))}
         </div>
+      </section>
+      <section className="mb-16">
+        <h2 className="text-2xl font-bold mb-8 text-slate-900 dark:text-white">
+          Inspiration
+        </h2>
+        <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+          As I am new to pottery I have been scouring resources for different techniques and educational content.
+        </p>
+        <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+          There are a couple youtubers I have been gravitated to in particularly and seem to go back to their content quite a bit. 
+          They are: 
+          <ul className="list-disc list-inside mt-2">
+            <li><a href="https://www.youtube.com/@floriangadsby" target="_blank" className="underline">Florian Gadsby</a></li>
+            <li><a href="https://www.youtube.com/@OldForgeCreations" target="_blank" className="underline">Old Forge Creations</a></li>
+          </ul>
+        </p>
       </section>
     </main>
   );
